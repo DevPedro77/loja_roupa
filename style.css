@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #f7f4f4;
+}
+
+
+.header-main header {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-main h1 {
+    margin-left: 3rem;
+}
+
+.header-main img{
+    width: 21px;
+}
+
+.lista-links li {
+    display: inline;
+    padding: 8px;
+    margin-left: 8px;
+}
+
+.lista-links li a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+}
+.lista-links .shop-li a{
+    color: red;
+}
+
+.conteiner {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.roupas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exibe duas colunas por linha */
+    gap: 16px; /* Adiciona espaçamento entre as colunas e as linhas */
+    align-items: center;
+}
+.roupa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 4px solid #ccc;
+    box-shadow: #0c0c0c;
+    padding: 16px;
+}
+
+
+
+.roupa img {
+    width: 100%; /* Faz com que a imagem ocupe 100% da largura do contêiner pai */
+    max-width: 100%;
+    margin-bottom: 8px; /* Adiciona espaçamento abaixo da imagem */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    display: inline-block
+}
+
+.roupa img:hover{
+    transform: scale(1.1)
+}
+
+.price p {
+    margin-top: 8px; /* Coloca a div price no final do contêiner flexível */
+
+}
+
+.price button{
+    display: inline-block;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #3498db;
+    margin-top: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo de hover do botão */
+.price button:hover {
+    background-color: #2980b9;
+    transform: scale(1.2)
+}
+
+section h3{
+    font-size: 24px;
+    margin: 0 auto;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.conteudo img{
+    display: block;
+    width: 100%;
+    margin-bottom: 80px;
+    
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: none;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+footer p {
+    margin-left: 32px;
+    background-color: #ffffff;
+    color: #222222;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+footer img {
+    margin-right: 32px;
+    width: 32px;
+    
+}
+
+@media screen and (max-width:640px){
+
+
+    .header-main header {
+        font-size: 12px;
+        padding: 8px 0;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-main h1 {
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    
+.header-main img{
+    width: 1rem;
+}
+
+.roupas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Exibe duas colunas por linha */
+    gap: 8px; /* Adiciona espaçamento entre as colunas e as linhas */
+    border: none;
+}
+
+
+.roupa img {
+    width: 70%; /* Faz com que a imagem ocupe 100% da largura do contêiner pai */
+    max-width: 100%;
+    margin-bottom: 8px; /* Adiciona espaçamento abaixo da imagem */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    display: block
+}
+.price button {
+    display: inline-block;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #3498db;
+    margin-top: 8px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.price button:hover {
+    background-color: #0c0c0c;
+    transform: scale(0.8.1)
+}
+
+.price p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+section h3{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 8px;
+    font-weight: bold;
+}
+
+
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr, 1fr);
+    overflow: hidden;
+    width:100vw;
+
+}
+    
+}
+
+@media screen and (min-width:641px) and (max-width: 1024px){
+    .roupas{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .roupa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: 1px solid #ccc;
+        padding: 16px;
+        margin-bottom: 8px;
+    }
+    .roupa img {
+        width: 70%;
+        max-width: 100%;
+        margin-bottom: 8px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        overflow: hidden;
+    }
+    .conteudo{
+        width: 100%;
+    }
+    
+
+    .imagem-sobre img {
+        max-width: 100%; /* Garante que as imagens ocupem 100% da largura do contêiner */
+    }    
+
+
+}
+
